@@ -1,0 +1,93 @@
+div {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+}
+
+#header {
+  text-align: left;
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 6%;
+}
+
+.header-greeting {
+  font-size: 0.49rem;
+  color: #8a93a4;
+}
+
+.header-content {
+  display: grid;
+  grid-template-columns: 90% 10%;
+}
+
+.header-content div {
+  font-size: 0.58rem;
+  color: #1a1f2c;
+  padding-top: 0.25rem;
+}
+
+#trending-workouts {
+  text-align: left;
+  position: absolute;
+  left: 6%;
+  right: 6%;
+  top: 13.5%;
+}
+
+#trending-workouts b {
+  font-size: 0.7rem;
+  color: #1a1f2c;
+}
+
+// #trending-workouts .container {
+  
+//   height: 135px;
+//   position: relative;
+//   background: #ccc;
+//   overflow: hidden;
+//   border-radius: 10px;
+// }
+
+.image-card {
+  width: 100%;
+  height: 135px;
+  border-radius: 10px;
+  position: relative;
+  background-size: cover;
+  margin-top: 0.7rem;
+  overflow: hidden;
+}
+
+.img-btn {
+  height: 15px;
+  width: 40px;
+  font-size: 0.4rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(10px);
+  color: #d4d6d9;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+
+.chld-container {
+  padding-top: 8px;
+  padding-left: 15px;
+}
+
+.img-footer {
+  height: 3rem;
+  background: rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(10px);
+  color: #d4d6d9;
+  margin-top:25%;
+  overflow: hidden;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 25% 25% 10%;
+}
