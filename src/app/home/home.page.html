@@ -11,27 +11,46 @@
 
   <div id="trending-workouts">
     <b>Trending Workouts <img src="../../assets/icon/fire.png" alt="" width="5%"></b>
-    <!-- <div class="container">
-      <img src="https://media.istockphoto.com/photos/young-sweaty-strong-muscular-fit-man-with-big-muscles-doing-ball-on-picture-id1273688007?k=20&m=1273688007&s=612x612&w=0&h=jznU1uQEFThDvdva14UK_Mbwd4lRL7bG0hbZTdKEvzs=" alt="Trending">
-    </div>     -->
-    <div class="image-card"
-      style="background-image: url('https://media.istockphoto.com/photos/young-sweaty-strong-muscular-fit-man-with-big-muscles-doing-ball-on-picture-id1273688007?k=20&m=1273688007&s=612x612&w=0&h=jznU1uQEFThDvdva14UK_Mbwd4lRL7bG0hbZTdKEvzs=')">
-      <div class="chld-container">
-        <button class="img-btn">Begginer</button>
-        <button style="margin-left:2px" class="img-btn">Full Body</button>
-      </div>
-      <div class="img-footer">
-        <div > 
-          <div class="chld-container" style="font-size: 0.7rem;font-family: 'Roboto', sans-serif;font-weight: 600;">
-            Push Your Limit
+    <ion-slides [options]="slideOpts">
+      <ion-slide>
+        baby khe mah?
+      </ion-slide>
+      <ion-slide>
+        <div class="image-card"
+          style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+          <div class="chld-container">
+            <div style="margin-left:2px" class="img-btn">
+              <p>Beginner</p>
+            </div>
+            <div style="margin-left:2px" class="img-btn">
+              <p>Full Body</p>
+            </div>
           </div>
-          <div class="footer-content">
-            <div class="chld-container" style="font-size:8px"><ion-icon name="flame-outline"></ion-icon> 360 kcal</div>
-            <div class="chld-container" style="font-size:8px"><ion-icon name="flame-outline"></ion-icon> 360 kcal</div>
+          <div class="img-footer">
+            <div class="chld-container" style="font-size: 0.7rem;font-family: 'Roboto', sans-serif;font-weight: 600;">
+              Push Your Limit
+            </div>
+            <div class="footer-content">
+              <div class="chld-container" style="font-size:8px">
+                <ion-icon style="font-size:10px; color: white; transform: translate(-30%, 0%)" name="flame"></ion-icon>
+                <ion-label style="font-size:7px; color: white">360 kcal</ion-label>
+              </div>
+              <div class="chld-container" style="font-size:8px">
+                <ion-icon style="font-size:10px; color: white; transform: translate(-30%, 0%)" name="time"></ion-icon>
+                <ion-label style="font-size:7px; color: white">1h 25min</ion-label>
+              </div>
+              <div class="container-rating">
+                <ion-icon style="font-size:9px; color: #f2c04b; transform: translate(-30%, 20%);" name="star">
+                </ion-icon>
+                <ion-label style="font-size:9px; color: white">4.8</ion-label>
+              </div>
+            </div>
           </div>
-        </div>        
-        <ion-icon name="notifications-outline"></ion-icon>
-      </div>
-    </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <h1>Slide 3</h1>
+      </ion-slide>
+    </ion-slides>
   </div>
 </ion-content>
