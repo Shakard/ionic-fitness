@@ -7,9 +7,15 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  slideOpts = {
+  trendingSlideOpts = {
     initialSlide: 1,
     speed: 400
+  };
+
+  typeWorkoutlideOpts = {
+    freeMode: true,
+    slidesPerView: 2.1,
+    slidesOffsetBefore: 11,
   };
 
   constructor() {}

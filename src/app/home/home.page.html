@@ -5,18 +5,21 @@
     </div>
     <div class="header-content">
       <div>Stay Fit & Healthy</div>
-      <ion-icon name="notifications-outline"></ion-icon>
+      <div style="position:relative; transform: translate(0%, -30%);">
+        <ion-icon name="notifications-outline" style="font-size: 1rem;"></ion-icon>
+        <div id="cart-badge"></div>
+      </div>      
     </div>
   </div>
 
   <div id="trending-workouts">
     <b>Trending Workouts <img src="../../assets/icon/fire.png" alt="" width="5%"></b>
-    <ion-slides [options]="slideOpts">
+    <ion-slides [options]="trendingSlideOpts">
       <ion-slide>
         baby khe mah?
       </ion-slide>
       <ion-slide>
-        <div class="image-card"
+        <div class="trending-card"
           style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
           <div class="chld-container">
             <div style="margin-left:2px" class="img-btn">
@@ -26,18 +29,19 @@
               <p>Full Body</p>
             </div>
           </div>
-          <div class="img-footer">
-            <div class="chld-container" style="font-size: 0.7rem;font-family: 'Roboto', sans-serif;font-weight: 600;">
+          <div class="trending-footer">
+            <div class="chld-container"
+              style="font-size: 0.7rem;font-family:'Roboto', sans-serif;font-weight: 600;padding-top: 8px;">
               Push Your Limit
             </div>
             <div class="footer-content">
               <div class="chld-container" style="font-size:8px">
-                <ion-icon style="font-size:10px; color: white; transform: translate(-30%, 0%)" name="flame"></ion-icon>
-                <ion-label style="font-size:7px; color: white">360 kcal</ion-label>
+                <ion-icon style="font-size:9px; color: white; transform: translate(10%, -60%)" name="flame"></ion-icon>
+                <ion-label style="font-size:6px; color: white; transform: translate(10%, -60%)">360 kcal</ion-label>
               </div>
               <div class="chld-container" style="font-size:8px">
-                <ion-icon style="font-size:10px; color: white; transform: translate(-30%, 0%)" name="time"></ion-icon>
-                <ion-label style="font-size:7px; color: white">1h 25min</ion-label>
+                <ion-icon style="font-size:9px; color: white; transform: translate(10%, -60%)" name="time"></ion-icon>
+                <ion-label style="font-size:6px; color: white; transform: translate(10%, -60%)">1h 25min</ion-label>
               </div>
               <div class="container-rating">
                 <ion-icon style="font-size:9px; color: #f2c04b; transform: translate(-30%, 20%);" name="star">
@@ -53,4 +57,86 @@
       </ion-slide>
     </ion-slides>
   </div>
+
+  <div id="type-workouts">
+    <b>Workout Types</b>
+    <ion-slides [options]="typeWorkoutlideOpts">
+      <ion-slide>
+        <div class="type-workout-card"
+          style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+          <div class="type-workout-footer">
+            <div class="footer-content">
+              <div class="chld-container"
+                style="font-size: 0.6rem;font-family:'Lato', sans-serif;font-weight:800;padding-top: 8px;">
+                Hiit
+              </div>
+              <div class="chld-container"
+                style="font-size: 0.45rem;font-family:'Lato', sans-serif;font-weight:400;padding-top: 8px;">
+                15 session
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="type-workout-card"
+          style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+          <div class="type-workout-footer">
+            <div class="footer-content">
+              <div class="chld-container"
+                style="font-size: 0.6rem;font-family:'Lato', sans-serif;font-weight:800;padding-top: 8px;">
+                Hiit
+              </div>
+              <div class="chld-container"
+                style="font-size: 0.45rem;font-family:'Lato', sans-serif;font-weight:400;padding-top: 8px;">
+                15 session
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+      <ion-slide>
+        <div class="type-workout-card"
+          style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+          <div class="type-workout-footer">
+            <div class="footer-content">
+              <div class="chld-container"
+                style="font-size: 0.6rem;font-family:'Lato', sans-serif;font-weight:800;padding-top: 8px;">
+                Hiit
+              </div>
+              <div class="chld-container"
+                style="font-size: 0.45rem;font-family:'Lato', sans-serif;font-weight:400;padding-top: 8px;">
+                15 session
+              </div>
+            </div>
+          </div>
+        </div>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="">
+        <ion-icon style="font-size: 15px;" name="home"></ion-icon>
+        <ion-label style="font-size: 7px;">Home</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="">
+        <ion-icon style="font-size: 15px;" name="search"></ion-icon>
+        <ion-label style="font-size: 7px;">Search</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="">
+        <ion-icon style="font-size: 15px;" name="copy"></ion-icon>
+        <ion-label style="font-size: 7px;">Article</ion-label>
+      </ion-tab-button>
+
+      <ion-tab-button tab="">
+        <ion-icon style="font-size: 15px;" name="person"></ion-icon>
+        <ion-label style="font-size: 7px;">Profile</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
