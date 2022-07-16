@@ -1,4 +1,4 @@
-<ion-content [fullscreen]="true">
+<ion-content [fullscreen]="true" scroll-y="false">
   <div id="header">
     <div class="header-greeting">
       Hello, Maria!
@@ -8,13 +8,13 @@
       <div style="position:relative; transform: translate(0%, -30%);">
         <ion-icon name="notifications-outline" style="font-size: 1rem;"></ion-icon>
         <div id="cart-badge"></div>
-      </div>      
+      </div>
     </div>
   </div>
 
   <div id="trending-workouts">
-    <b>Trending Workouts <img src="../../assets/icon/fire.png" alt="" width="5%"></b>
-    <ion-slides [options]="trendingSlideOpts">
+    <b class="subtitle">Trending Workouts <img src="../../assets/icon/fire.png" alt="" width="5%"></b>
+    <ion-slides [options]="trendingSlideOpts" loop="true">
       <ion-slide>
         baby khe mah?
       </ion-slide>
@@ -22,16 +22,16 @@
         <div class="trending-card"
           style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
           <div class="chld-container">
-            <div style="margin-left:2px" class="img-btn">
+            <div class="img-btn" style="margin-left:2px">
               <p>Beginner</p>
             </div>
-            <div style="margin-left:2px" class="img-btn">
+            <div class="img-btn" style="margin-left:2px">
               <p>Full Body</p>
             </div>
           </div>
           <div class="trending-footer">
             <div class="chld-container"
-              style="font-size: 0.7rem;font-family:'Roboto', sans-serif;font-weight: 600;padding-top: 8px;">
+              style="font-size: 0.7rem;font-family:'Roboto', sans-serif;font-weight: 600;padding-top: 8px;color: white;">
               Push Your Limit
             </div>
             <div class="footer-content">
@@ -58,8 +58,8 @@
     </ion-slides>
   </div>
 
-  <div id="type-workouts">
-    <b>Workout Types</b>
+  <div id="type-workouts-slide">
+    <b class="subtitle">Workout Types</b>
     <ion-slides [options]="typeWorkoutlideOpts">
       <ion-slide>
         <div class="type-workout-card"
@@ -114,6 +114,64 @@
       </ion-slide>
     </ion-slides>
   </div>
+
+
+  <ion-slides id="additional-training-slide" [options]="aditionalTrainingOpts">
+    <p class="subtitle">
+      Additional Training
+    </p>
+    <ion-slide style="display: grid; grid-template-columns: 50% 50%;">
+      <div class="additional-training-card"
+        style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+      </div>
+      <div>
+        <p class="subtitle" style="transform: translate(-50%, 50%)">
+          Deep Amrap Burner
+        </p>
+        <div style="display:grid;grid-template-columns:50% 50%;">
+          <div class="chld-container" style="transform:translate(-110%, -30%)">
+            <ion-icon style="font-size:12px; color: #74cd86;" name="flame"></ion-icon>
+            <ion-label style="font-size:8px; color: black;">360 kcal</ion-label>
+          </div>
+          <div class="chld-container" style="transform:translate(-120%, -30%)">
+            <ion-icon style="font-size:12px; color: #74cd86;" name="time"></ion-icon>
+            <ion-label style="font-size:8px; color: black;">25min</ion-label>
+          </div>
+        </div>
+        <div>
+          <p style="font-size: 8px;font-weight: 750 ;color:#b5bcc6;transform:translate(-61%, -110%)">
+            Beginner - Full Body
+          </p>
+        </div>
+      </div>
+    </ion-slide>
+    <ion-slide style="display: grid; grid-template-columns: 50% 50%;">
+      <div class="additional-training-card"
+        style="background-image: url('https://e00-expansion.uecdn.es/assets/multimedia/imagenes/2022/01/26/16432154059689.jpg')">
+      </div>
+      <div>
+        <p class="subtitle" style="transform: translate(-50%, 50%)">
+          Deep Amrap Burner
+        </p>
+        <div style="display:grid;grid-template-columns:50% 50%;">
+          <div class="chld-container" style="transform:translate(-110%, -30%)">
+            <ion-icon style="font-size:12px; color: #74cd86;" name="flame"></ion-icon>
+            <ion-label style="font-size:8px; color: black;">360 kcal</ion-label>
+          </div>
+          <div class="chld-container" style="transform:translate(-120%, -30%)">
+            <ion-icon style="font-size:12px; color: #74cd86;" name="time"></ion-icon>
+            <ion-label style="font-size:8px; color: black;">25min</ion-label>
+          </div>
+        </div>
+        <div>
+          <p style="font-size: 8px;font-weight: 750 ;color:#b5bcc6;transform:translate(-61%, -110%)">
+            Beginner - Full Body
+          </p>
+        </div>
+      </div>
+    </ion-slide>
+  </ion-slides>
+
 
 
   <ion-tabs>

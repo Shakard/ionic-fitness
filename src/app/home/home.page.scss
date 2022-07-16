@@ -2,6 +2,10 @@ div {
   font-family: 'Lato', sans-serif;
 }
 
+ion-content {
+  overflow: hidden;
+}
+
 //====================================HEADER STYLES============================================
 #header {
   text-align: left;
@@ -26,7 +30,7 @@ div {
   font-size: 0.65rem;
   font-weight: 900;
   color: #1a1f2c;
-  padding-top: 0.25rem;
+  padding-top: 0.20rem;
 }
 
 #cart-badge {
@@ -47,13 +51,7 @@ div {
   position: absolute;
   left: 6%;
   right: 6%;
-  top: 15%;
-}
-
-#trending-workouts b {
-  font-size: 0.7rem;
-  font-weight: 900;
-  color: #1a1f2c;
+  top: 88px;
 }
 
 .trending-card {
@@ -73,8 +71,8 @@ div {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   background: rgba(167, 170, 174, 0.7);
-  backdrop-filter: blur(10px);
-  color: #d4d6d9;
+  backdrop-filter: blur(2px);
+  color: white;
   text-align: center;
   border-radius: 5px;
 }
@@ -87,15 +85,15 @@ div {
   align-items: center;
 }
 
-.chld-container p{
+.chld-container p {
   font-weight: 700;
 }
 
 .trending-footer {
   height: 3.3rem;
   margin-top: 25%;
-  background: rgba(78, 91, 104, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(78, 91, 104, 0.7);
+  backdrop-filter: blur(4px);
   color: #d4d6d9;
 }
 
@@ -112,7 +110,7 @@ div {
   font-family: 'Roboto', sans-serif;
   font-weight: 600;
   background: rgba(44, 54, 70, 0.7);
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(4px);
   color: #d4d6d9;
   border-radius: 5px;
   padding: 4px 0;
@@ -125,18 +123,12 @@ ion-chip {
 
 //=============================================================types workout=======================================
 
-#type-workouts {
+#type-workouts-slide {
   text-align: left;
   position: absolute;
   left: 6%;
   right: 6%;
-  top: 47%;
-}
-
-#type-workouts b {
-  font-size: 0.7rem;
-  font-weight: 900;
-  color: #1a1f2c;
+  top: 279px;
 }
 
 .type-workout-card {
@@ -151,8 +143,8 @@ ion-chip {
 
 .type-workout-footer {
   height: 1.8rem;
-  background: rgba(78, 91, 104, 0.95);
-  backdrop-filter: blur(10px);
+  background: rgba(78, 91, 104, 0.7);
+  backdrop-filter: blur(4px);
   color: #d4d6d9;
   margin-top: 46%;
   overflow: hidden;
@@ -164,3 +156,34 @@ ion-chip {
   transform: translate(0%, -15%);
 }
 
+//=============================================================Additional Training=======================================
+
+#additional-training-slide {
+  text-align: left;
+  position: absolute;
+  height: 125px;
+  left: 6%;
+  right: 6%;
+  top: 399px;
+}
+
+#additional-training-slide ion-slide {
+  margin-bottom: 8px;
+  height: 300px;
+}
+
+.subtitle{
+  font-size: 0.7rem;
+  font-weight: 700;
+  margin-bottom: 1px;
+  color: #1a1f2c;
+}
+
+.additional-training-card {
+  height: 53px;
+  width: 53px;
+  border-radius: 5px;
+  position: relative;
+  background-size: cover;
+  overflow: hidden;
+}

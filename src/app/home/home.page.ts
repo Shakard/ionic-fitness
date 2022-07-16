@@ -18,6 +18,18 @@ export class HomePage {
     slidesOffsetBefore: 11,
   };
 
+  aditionalTrainingOpts = {
+    // direction:"vertical",
+    // slidesPerView:"0",
+    // loop:"true"
+    initialSlide: 0,
+    speed: 400,
+     pager:"true",
+     direction:"vertical",
+     slidesPerView:"2",
+    //  spaceBetween:"30"
+  };
+
   constructor() {}
 
 }
