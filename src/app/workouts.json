@@ -1,0 +1,92 @@
+{
+  "trending": [
+    {
+      "difficulty": "Beginner",
+      "type": "Full Body",
+      "calories": 360,
+      "duration": 85,
+      "rating": 4.8,
+      "img": "https://www.mensjournal.com/wp-content/uploads/2017/02/FrontSquat.jpg?w=900&h=506&crop=1&quality=86&strip=all"
+    },
+    {
+      "difficulty": "Expert",
+      "type": "Core",
+      "calories": 520,
+      "duration": 60,
+      "rating": 4.9,
+      "img": "https://img.etimg.com/photo/msid-74747053,quality-100/for-miles-a-great-bodyweight-workout-would-include-squats-push-ups-walking-lunges-.jpg"
+    },
+    {
+      "difficulty": "Intermediate",
+      "type": "Arms",
+      "calories": 250,
+      "duration": 40,
+      "rating": 4.7,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtPzJFErMdrAc4lPR60mVshuMKEMztIwIeAw&usqp=CAU"
+    }
+  ],
+  "types": [
+    {
+      "type": "Hiit",
+      "session": 12,
+      "img": "https://www.popsci.com/uploads/2019/10/31/7BRTDJOXCIQQH4ZMCBFIUDLEZQ.jpg?auto=webp&width=1440&height=960"
+    },
+    {
+      "type": "Amrap",
+      "session": 15,
+      "img": "https://cdn.sanity.io/images/dm4o0ui7/production/64812e8af6cf00b586af0b754134be2dba9f9413-1080x540.png?w=900&h=450&auto=format"
+    },
+    {
+      "type": "Functional",
+      "session": 10,
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sweaty-black-athlete-doing-sit-ups-in-a-gym-royalty-free-image-1591197876.jpg"
+    },
+    {
+      "type": "Core",
+      "session": 18,
+      "img": "https://media.self.com/photos/61bcd0e05aed92fc4251b026/4:3/w_2560%2Cc_limit/GettyImages-1213234926.jpeg"
+    }
+  ],
+  "additional": [
+    {
+      "name": "Deep Amrap Burner",
+      "difficulty": "Beginner",
+      "type": "Full body",
+      "calories": 125,
+      "duration": 15,
+      "img": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/web-gettyimages-1047038220-2-1573589245.jpg"
+    },
+    {
+      "name": "Deep Butt Sculp",
+      "difficulty": "Expert",
+      "type": "Legs",
+      "calories": 250,
+      "duration": 30,
+      "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQlp_Z25WPeaQVgA_bSBkDW_ltl1hWS9DTfQcBH-grOXtzl8JOSfRb1WszeZHj6lsjPuE&usqp=CAU"
+    },
+    {
+      "name": "Warmup",
+      "difficulty": "Beginner",
+      "type": "Full body",
+      "calories": 100,
+      "duration": 10,
+      "img": "https://s.yimg.com/ny/api/res/1.2/CbVElC1zZqX1P3S3TZyfCQ--/YXBwaWQ9aGlnaGxhbmRlcjt3PTY0MDtoPTMyMQ--/https://s.yimg.com/uu/api/res/1.2/Rq1XX84lE6uT0vrI2Z0bxg--~B/aD03MjI7dz0xNDQwO2FwcGlkPXl0YWNoeW9u/https://media.zenfs.com/en/hearst_mens_health_171/17a9342db04a0a78d43c16bc8bd82a87"
+    },
+    {
+      "name": "Burn Belly Fat Fast",
+      "difficulty": "Intermediate",
+      "type": "Core",
+      "calories": 320,
+      "duration": 15,
+      "img": "https://www.mindpumpmedia.com/hubfs/shutterstock_1442721002.png"
+    },
+    {
+      "name": "Deep Back Sculp",
+      "difficulty": "Intermediate",
+      "type": "Back",
+      "calories": 200,
+      "duration": 30,
+      "img": "https://www.liveabout.com/thmb/X__PLFAzDp5r-ufKmCM6aFvC9IE=/395x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-591403645-58b0efab3df78cdcd830344c.jpg"
+    }
+  ]
+}

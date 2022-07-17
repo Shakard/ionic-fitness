@@ -44,7 +44,7 @@ ion-content {
   right: 10px;
 }
 
-//=============================================================================================
+//=================================================Trending Workouts============================================
 
 #trending-workouts {
   text-align: left;
@@ -117,18 +117,14 @@ ion-content {
   transform: translate(0%, -30%);
 }
 
-ion-chip {
-  margin-bottom: 10px;
-}
-
 //=============================================================types workout=======================================
 
-#type-workouts-slide {
+#workout-types-slide {
   text-align: left;
   position: absolute;
   left: 6%;
   right: 6%;
-  top: 279px;
+  top: 300px;
 }
 
 .type-workout-card {
@@ -138,7 +134,9 @@ ion-chip {
   position: relative;
   background-size: cover;
   margin-top: 0.7rem;
+  margin-right: 1px;
   overflow: hidden;
+  width: 100%;
 }
 
 .type-workout-footer {
@@ -161,14 +159,14 @@ ion-chip {
 #additional-training-slide {
   text-align: left;
   position: absolute;
-  height: 125px;
+  height: 135px;
   left: 6%;
   right: 6%;
-  top: 399px;
+  top: 425px;
 }
 
 #additional-training-slide ion-slide {
-  margin-bottom: 8px;
+  margin-bottom: 6px;
   height: 300px;
 }
 
@@ -187,3 +185,18 @@ ion-chip {
   background-size: cover;
   overflow: hidden;
 }
+
+//=============================================================Botton Tab=======================================
+
+ion-tab {
+  height: 105px;
+}
+
+ion-tab-button{
+  font-size: 7px;
+  --background-focused: #74cd86;
+  --color-selected: #74cd86;
+  max-width:100px;
+  ion-icon{
+      font-size: 15px;
+  }}

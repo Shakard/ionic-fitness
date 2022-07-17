@@ -1,35 +1,59 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { AdditionalWorkout } from '../models/additional-workout';
+import { TrendingWorkout } from '../models/trending-workout';
+import { TypeWorkout } from '../models/type-workout';
+import { WorkoutService } from '../services/workout.service';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
 })
-export class HomePage {
+export class HomePage implements OnInit{
+  // trending: TrendingWorkout[];
+  // types: TypeWorkout[];
+  // additional: AdditionalWorkout[];
+  trendings = [];
+  types = [];
+  additionals = [];
 
   trendingSlideOpts = {
-    initialSlide: 1,
+    initialSlide: 0,
     speed: 400
   };
 
   typeWorkoutlideOpts = {
-    freeMode: true,
+    initialSlide: 0,
+    speed: 400,
     slidesPerView: 2.1,
-    slidesOffsetBefore: 11,
+    spaceBetween:10
   };
 
   aditionalTrainingOpts = {
-    // direction:"vertical",
-    // slidesPerView:"0",
-    // loop:"true"
     initialSlide: 0,
     speed: 400,
      pager:"true",
      direction:"vertical",
      slidesPerView:"2",
-    //  spaceBetween:"30"
   };
 
-  constructor() {}
+  constructor(
+    private workoutService: WorkoutService
+    ) {}
+
+  ngOnInit() {
+    this.getWorkouts();
+  }
+
+  getWorkouts() {
+    this.workoutService.getWorkouts().subscribe((res: any) => {
+      this.trendings = res.trending;
+      this.types = res.types;
+      this.additionals = res.additional;      
+      console.log(this.additionals);
+      
+    }); 
+  }
+
 
 }
