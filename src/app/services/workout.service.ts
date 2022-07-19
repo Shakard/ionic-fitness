@@ -6,7 +6,7 @@ import { HttpClient } from '@angular/common/http';
 })
 export class WorkoutService {
   constructor(private http: HttpClient) { }
-  // Service that returns workouts
+  //Mock service that returns workouts as a JSON
   public getWorkouts() {
     return this.http.get('https://mocki.io/v1/ce7cb887-7c83-4baf-86e0-3fc1cbe227e3');
   }
