@@ -1,129 +1,21 @@
-<ion-content [fullscreen]="true" scroll-y="false">
-  <div id="header">
-    <div class="header-greeting">
-      Hello, Maria!
-    </div>
-    <div class="header-content">
-      <div>Stay Fit & Healthy</div>
-      <div style="position:relative; transform: translate(0%, -30%);">
-        <ion-icon name="notifications-outline" style="font-size: 1rem;"></ion-icon>
-        <div id="cart-badge"></div>
-      </div>
-    </div>
-  </div>
-
-  <div id="trending-workouts">
-    <b class="subtitle">Trending Workouts <img src="../../assets/icon/fire.png" alt="" width="5%"></b>
-    <ion-slides [options]="trendingSlideOpts" loop="true">
-      <ion-slide *ngFor="let trending of trendings" >
-        <div class="trending-card"
-          style="background-image: url({{trending.img}})">
-          <div class="chld-container">
-            <div class="img-btn" style="margin-right:4px">
-              <p>{{trending.difficulty}}</p>
-            </div>
-            <div class="img-btn">
-              <p>{{trending.type}}</p>
-            </div>
-          </div>
-          <div class="trending-footer">
-            <div class="chld-container"
-              style="font-size: 0.7rem;font-family:'Roboto', sans-serif;font-weight: 600;padding-top: 8px;color: white;">
-              Push Your Limit
-            </div>
-            <div class="footer-content">
-              <div class="chld-container" style="font-size:8px">
-                <ion-icon style="font-size:9px; color: white; transform: translate(10%, -60%)" name="flame"></ion-icon>
-                <ion-label style="font-size:6px; color: white; transform: translate(10%, -60%)">{{trending.calories}} kcal</ion-label>
-              </div>
-              <div class="chld-container" style="font-size:8px">
-                <ion-icon style="font-size:9px; color: white; transform: translate(10%, -60%)" name="time"></ion-icon>
-                <ion-label style="font-size:6px; color: white; transform: translate(10%, -60%)">{{trending.duration}}min</ion-label>
-              </div>
-              <div class="container-rating">
-                <ion-icon style="font-size:9px; color: #f2c04b; transform: translate(-30%, 20%);" name="star">
-                </ion-icon>
-                <ion-label style="font-size:9px; color: white">{{trending.rating}}</ion-label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </ion-slide>
-    </ion-slides>
-  </div>
-
-    <p class="subtitle" style="position:absolute;top: 275px;left: 6%;">
-      Workout Types
-    </p>
-    <ion-slides id="workout-types-slide" [options]="typeWorkoutlideOpts">
-      <ion-slide *ngFor="let type of types">
-        <div class="type-workout-card"
-          style="background-image: url({{type.img}})">
-          <div class="type-workout-footer">
-            <div class="footer-content">
-              <div class="chld-container"
-                style="font-size: 0.6rem;font-family:'Lato', sans-serif;font-weight:800;padding-top: 8px;">
-                {{type.type}}
-              </div>
-              <div class="chld-container"
-                style="font-size: 0.45rem;font-family:'Lato', sans-serif;font-weight:400;padding-top: 8px;">
-                {{type.session}} session
-              </div>
-            </div>
-          </div>
-        </div>
-      </ion-slide>
-    </ion-slides>
-
-  <p class="subtitle" style="position:absolute;top: 400px;left: 6%;">
-    Additional Training
-  </p>
-  <ion-slides id="additional-training-slide" [options]="aditionalTrainingOpts">    
-    <ion-slide *ngFor="let additional of additionals" style="display: grid; grid-template-columns: 50% 50%;">
-      <div class="additional-training-card"
-        style="background-image: url({{additional.img}})">
-      </div>
-      <div>
-        <p class="subtitle" style="transform: translate(-50%, 30%)">
-          {{additional.name}}
-        </p>
-        <div style="display:grid;grid-template-columns:50% 50%;">
-          <div class="chld-container" style="transform:translate(-105%, -15%)">
-            <ion-icon style="font-size:10px; color: #74cd86;" name="flame"></ion-icon>
-            <ion-label style="font-size:8px; color: black;transform:translate(10%, 0%)">{{additional.calories}} kcal</ion-label>
-          </div>
-          <div class="chld-container" style="transform:translate(-105%, -15%)">
-            <ion-icon style="font-size:10px; color: #74cd86;" name="time"></ion-icon>
-            <ion-label style="font-size:8px; color: black;transform:translate(10%, 0%)">{{additional.duration}}mins</ion-label>
-          </div>
-        </div>
-        <div>
-          <p style="font-size: 8px;font-weight: 750 ;color:#b5bcc6;transform:translate(-61%, -40%)">
-            {{additional.difficulty}} - {{additional.type}}
-          </p>
-        </div>
-      </div>
-    </ion-slide>   
-  </ion-slides>
-
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="">
-        <ion-icon name="home"></ion-icon>
-        <ion-label>Home</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="">
-        <ion-icon name="search"></ion-icon>
-        <ion-label>Search</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="">
-        <ion-icon name="copy"></ion-icon>
-        <ion-label>Article</ion-label>
-      </ion-tab-button>
-      <ion-tab-button tab="">
-        <ion-icon name="person"></ion-icon>
-        <ion-label>Profile</ion-label>
-      </ion-tab-button>
-    </ion-tab-bar>
-  </ion-tabs>
-</ion-content>
+<!-- botom tab bar -->
+<ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="workouts">
+      <ion-icon name="home"></ion-icon>
+      <ion-label>Home</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="search">
+      <ion-icon name="search"></ion-icon>
+      <ion-label>Search</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="article">
+      <ion-icon name="copy"></ion-icon>
+      <ion-label>Article</ion-label>
+    </ion-tab-button>
+    <ion-tab-button tab="profile">
+      <ion-icon name="person"></ion-icon>
+      <ion-label>Profile</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
